@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Baby Shower Regina</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="assets/fonts/babyhome/stylesheet.css?1" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css"/>
+
+    <link rel="stylesheet" href="{{ asset('assets/fonts/babyhome/stylesheet.css') }}" type="text/css" charset="utf-8" />
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+        </style>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+        </style>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+        </style>
+
+    <style type="text/css">
+
+        body { 
+            font-family: 'Oooh Baby', cursive;
+            color: #b81f86!important;
+        }
+
+        h1 span{
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: 'babyhomeregular';
+        }
+
+        p span{
+            font-size: 25px;
+        }
+
+        .btn-pink{
+            background: #b81f86;
+            border-radius: 25px;
+            color: #ffffff;
+        }
+
+        .spacer{
+            height: 50px;
+        }
+
+        .bg-cream{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            background-color: #fef5e4;
+        }
+
+        .bg-cream{
+            background-image: url('assets/img/pattern.png') ;
+            
+        }
+
+        .wrapper{
+            overflow: hidden;
+              background: url('assets/img/bg2.png') no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+        }
+
+        section{
+            padding-top: 5vh;
+            min-height: 100vh;
+            position: relative;
+        }
+
+            div.button{
+                /*
+                left: 0;
+                bottom: 0;
+                position: absolute;*/
+                width: 100%;
+                
+            }
+
+            .scroll-down {
+              min-height: 100vh;
+              -webkit-animation: colorCycle 7s infinite ease-in-out;
+              animation: colorCycle 7s infinite ease-in-out;
+            }
+            .scroll-down:before,
+            .scroll-down:after {
+              content: "\2193 \2193";
+              -webkit-animation: flash 1.5s 6;
+              animation: flash 1.5s 6;
+            }
+
+            @-webkit-keyframes colorCycle {
+              0% {
+                color: #F94816;
+              }
+              14.286% {
+                color: #E9D443;
+              }
+              28.572% {
+                color: #FD91F7;
+              }
+              42.858% {
+                color: #28963F;
+              }
+              57.144% {
+                color: #E43485;
+              }
+              71.43% {
+                color: #A2E4F2;
+              }
+              85.716% {
+                color: #FA476E;
+              }
+              100% {
+                color: #F94816;
+              }
+            }
+
+            @keyframes colorCycle {
+              0% {
+                color: #F94816;
+              }
+              14.286% {
+                color: #E9D443;
+              }
+              28.572% {
+                color: #FD91F7;
+              }
+              42.858% {
+                color: #28963F;
+              }
+              57.144% {
+                color: #E43485;
+              }
+              71.43% {
+                color: #A2E4F2;
+              }
+              85.716% {
+                color: #FA476E;
+              }
+              100% {
+                color: #F94816;
+              }
+            }
+
+
+            .icon {
+              margin: 0 auto;
+              border: 2px solid #000;
+              height: 62px;
+              width: 36px;
+              border-radius: 18px;
+              position: relative;
+              background-color: rgba(255,255,255,.05);
+              cursor: pointer;
+            }
+
+            .icon:before {
+              content: '';
+              background: #000;
+              height: 6px;
+              width: 2px;
+              position: absolute;
+              top: 14px;
+              border-radius: 1px;
+              left: calc(50% - 1px);
+              animation: scroll 1.15s infinite;
+            }
+
+            @keyframes scroll {
+              15% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0;
+                transform: translateY(24px);
+              }
+            }
+
+            #invitation{
+
+            }
+
+            #invitation h1, h3{
+                font-family: 'babyhomeregular';
+            }
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+{#         <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 text-center">
+                        <div class="spacer"></div>
+                        <h2 class="scroll-down">Desliza</h2>
+                    </div>
+                </div>
+            </div>
+        </div> #}
+
+        <section id="section1" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mainphrase"></h1>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="subtext"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="image"></div>
+                    </div>
+                </div>
+                <div class="row controls">
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mainphrase"></h1>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="subtext"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="image"></div>
+                    </div>
+                </div>
+                <div class="row controls">
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mainphrase"></h1>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="subtext"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="image"></div>
+                    </div>
+                </div>
+                <div class="row controls">
+                </div>
+            </div>
+        </section>
+
+        <section id="section4" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mainphrase"></h1>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="subtext"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="image"></div>
+                    </div>
+                </div>
+                <div class="row controls">
+                </div>
+            </div>
+        </section>
+
+        <section id="section5" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mainphrase"></h1>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="subtext"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="image"></div>
+                    </div>
+                </div>
+                <div class="row controls">
+                </div>
+            </div>
+        </section>      
+
+        <!--
+        <div id="invitation" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="spacer"></div>
+                </div>
+
+                <div class="row">
+                    <div data-wow-duration="3s" data-wow-delay="0.1" class="col-md-6 offset-md-3 text-center wow fadeIn">
+                            <div class="card bg-cream text-white">
+                              <div class="card-body">
+                                <div class="spacer"></div>
+                                <h3 class="card-title">Mi Baby Shower</h3>
+                                <p class="card-text">Una vida empieza y otras se iluminan, acompáñanos a celebrar la llegada de</p>
+                                <div class="spacer"></div>
+                                <h1>Regina</h1>
+                                <img src="assets/img/rabbit1.png" class="img-fluid" width="200">
+                              </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+      </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script type="text/javascript">
+
+            $(function(){
+              new WOW().init(); 
+
+            });
+
+
+            var words = {
+                "section1": {
+                    "main": "My Baby Shower",
+                    "sub": "Hola {{ guest.firstname }}, ha llegado el momento y Regina está casi lista, hemos planeado un Baby Shower para celebrarlo en tu compañía.",
+                    "img": [
+                        {
+                            "src": "assets/img/rabbit.png",
+                            "width": 150,
+                            "caption": null,
+                            "link": null
+                        }
+                    ],
+                    "btnLink": "#section2"
+                },
+                "section2": {
+                    "main": "¿Cuándo?",
+                    "sub": "Te esperamos el día 3 de abril del presente año, en punto de las 4:00 pm",
+                    "img": [
+                        {
+                            "src": "assets/img/rabbit1.png",
+                            "width": 200,
+                            "caption": null,
+                            "link": null
+                        }
+                    ],
+                    "btnLink": "#section3"
+                },
+                "section3": {
+                    "main": "¿Dónde?",
+                    "sub": "En calle Matamoros 22-26, Petromex, 93290 Poza Rica de Hidalgo, Ver.",
+                    "img": [
+                        {
+                            "src": "https://cdn-icons-png.flaticon.com/512/854/854929.png",
+                            "width": 100,
+                            "caption": "Ir a la ubicación",
+                            "link": "https://goo.gl/maps/G6DmLnPPXxf7NZen8"
+                        }
+                    ],
+                    "btnLink": "#section4"
+                },
+                "section4": {
+                    "main": "Mesa de regalos",
+                    "sub": "El mejor regalo que puedes darnos es tu presencia, pero si quieres obsequiarnos algo, esto puede interesarte...",
+                    "img": [
+                        {
+                            "src": "https://media.giphy.com/media/rzWBXEnwAw219eWn9S/giphy.gif",
+                            "width": 200,
+                            "caption": "Ir a Mesa de regalos",
+                            "link": "https://mesaderegalos.liverpool.com.mx/milistaderegalos/50820658"
+                        }
+                    ],
+                    "btnLink": "#section5"
+                },
+                "section5": {
+                    "main": "Un poquito de mi...",
+                    "sub": "Aquí estoy en la pancita de mi mami :)",
+                    "img": [
+                        {
+                            "src": "https://c8.alamy.com/compes/2cng0t6/ultrasonido-bebe-2cng0t6.jpg",
+                            "width": 300,
+                            "caption": null,
+                            "link": null
+                        }
+                    ],
+                    "btnLink": null
+                }
+            };
+
+
+            $.each(words, function(i, item) {
+
+                var fullWord = '';
+
+                    if(item.main){
+                        fullWord+= item.main;
+                    }
+
+                    if(item.sub){
+                        fullWord+= item.sub;
+                    }
+
+                    for (j = 0; j < fullWord.length; j++) {
+                        var letterDiv = "<span data-wow-delay=\"" + (j * 0.1).toFixed(2) + "s\"  class=\"wow bounceIn\">" + fullWord[j] + "</span>";
+                        if(j < item.main.length){
+                            $(letterDiv).appendTo($("section#"+i+" .mainphrase"));
+                        }else{
+                            $(letterDiv).appendTo($("section#"+i+" .subtext"));
+                        }
+                    }
+
+
+                    $.each(item.img, function(subi, subitem) {
+                        var imgCaption = '';
+                        if(subitem.caption != null){
+
+                            if(subitem.link != null){
+                                imgCaption = "<div class=\"wow fadeInDown\" data-wow-delay=\"" + (fullWord.length * 0.1).toFixed(2) + "s\"><a href=\""+ subitem.link +"\" class=\"btn btn-pink\" target=\"_blank\">"+subitem.caption+"</a></div>"; 
+                            }else{
+                                imgCaption = "<p class=\"wow fadeInDown\" data-wow-delay=\"" + (fullWord.length * 0.1).toFixed(2) + "s\">"+subitem.caption+"</p>";  
+                            }
+                            
+                        }
+
+
+                        $("section#"+i+" .image").append("<div class=\"col-xs-12 col-md-" + ( 12 / item.img.length ) + "\"><img data-wow-duration=\"3s\" data-wow-delay=\"" + (fullWord.length * 0.1).toFixed(2) + "s\"  class=\"wow fadeIn img-fluid\" src=\"" + item.img[subi].src + "\" width=\""+subitem.width+"\" style=\"max-width:"+subitem.width+"\"/>"+imgCaption+"</div>");
+                    });
+
+                    if(item.btnLink != null){
+                        $("section#"+i+" .controls").append("<div class=\"col text-center\"><a data-wow-duration=\"2s\" href=\""+item.btnLink+"\" data-wow-delay=\"" + (fullWord.length * 0.1).toFixed(2) + "s\"  class=\"wow fadeInDown\"><img src=\"{{ asset('assets/img/up-arrow.png') }}\" style=\"width:50px;\"></a></div><div class=\"col text-center\"><a data-wow-duration=\"2s\" href=\""+item.btnLink+"\" data-wow-delay=\"" + (fullWord.length * 0.1).toFixed(2) + "s\"  class=\"wow fadeInDown\"><img src=\"{{ asset('assets/img/down-arrow.png') }}\" style=\"width:50px;\"></a></div>");
+                    }
+
+                    /*
+                    if(item.btnLink != null){
+                        $("section#"+i+"").append("<div class=\"button text-center\"><a data-wow-duration=\"2s\" href=\""+item.btnLink+"\" data-wow-delay=\"" + (fullWord.length * 0.1).toFixed(2) + "s\"  class=\"wow fadeInDown\"><img src=\"https://static.wixstatic.com/media/bf827f_db4157875df2460489709fcce4fbeb30~mv2.gif\" style=\"width:50px;\"></a></div>");
+                    }
+                    */
+            });
+
+            /*
+    $('html, body').animate({
+        scrollTop: $("#invitation").offset().top
+    }, 2000);
+    */
+
+    </script>
+
+  </body>
+</html>
