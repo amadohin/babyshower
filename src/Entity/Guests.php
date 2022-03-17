@@ -4,14 +4,21 @@ namespace App\Entity;
 
 use App\Repository\GuestsRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Uid\Uuid;
 
 #[ORM\Entity(repositoryClass: GuestsRepository::class)]
+#[ORM\HasLifecycleCallbacks()]
 class Guests
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
     private $id;
+
+    private $link;
+
+    #[ORM\Column(type: 'string', length: 50)]
+    private $uuid;
 
     #[ORM\Column(type: 'string', length: 255)]
     private $firstname;
@@ -31,9 +38,31 @@ class Guests
     #[ORM\Column(type: 'datetime')]
     private $createdat;
 
+    public function __construct() {
+        $this->updatedat = new \DateTime();
+        $this->isactive = true;
+        $this->createdat = new \DateTime();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getLink(): ?string
+    {
+        return 'http://mybabyshowerregina.ddns.net/' . $this->uuid;
+    }
+
+    public function getUuid(): ?string
+    {
+        return $this->uuid;
+    }
+
+    #[ORM\PrePersist]
+    public function setUuid(): void
+    {
+        $this->uuid = Uuid::v4();
     }
 
     public function getFirstname(): ?string
@@ -107,4 +136,5 @@ class Guests
 
         return $this;
     }
+
 }

@@ -10,10 +10,14 @@ use Doctrine\Persistence\ManagerRegistry;
 
 class HomePageController extends AbstractController
 {
-    #[Route('/{id}', name: 'app_home_page')]
-    public function index(ManagerRegistry $doctrine, int $id): Response
+    #[Route('/{uuid}', name: 'app_home_page')]
+    public function index(ManagerRegistry $doctrine, string $uuid = null): Response
     {
-        $guest = $doctrine->getRepository(Guests::class)->find($id);
+        if($uuid != null){
+            $guest = $doctrine->getRepository(Guests::class)->findOneBy(['uuid' => $uuid]);
+        }else{
+            $guest = [];
+        }
 
         return $this->render('home_page/index.html.twig', [
             'guest' => $guest,
